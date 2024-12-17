@@ -12,7 +12,7 @@ body{
     background-color:  rgb(184, 229, 240);
 }
 .container{
-    max-width: 1200px;
+    max-width:1200px;
     margin: 0 auto;
 }
 .header{
@@ -35,12 +35,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10000;
+    z-index: 100000;
     transition: background-color 0.3s ease-in-out;
     border-bottom: 1px solid #ffffff29;
 }
 .logo{
-    font-size: 40px;
+    font-size: 24px;
     color: #0011DB;
     font-weight: 800;
 }
@@ -49,7 +49,7 @@ body{
     float: left;
 }
 .menu .navbar ul li a{
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     color: #0011DB;
     display: block;
@@ -61,25 +61,24 @@ body{
     display: none;
 }
 .menu-icono{
-    width: 25px;
+    max-width: 25px;
 }
 .menu label{
-    display: none;
     cursor: pointer;
+    display: none;
 }
-
 .header-info h1{
     color: #0011DB;
     text-transform: uppercase;
-    font-size: 70px;
-    font-weight: 800;
+    font-size: 60px;
+    font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
 .header-info p{
     color: #093a04;
-    font-size: 28px;
+    font-size: 18px;
     text-transform: capitalize;
     margin-bottom: 35px;
 }
@@ -108,19 +107,27 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
+    height: 750px;
 }
 
-.welcome-2{
+.welcome-2 {
     width: 50%;
-    padding: 150px 250px 150px 100px;
-    background-color: rgb(184, 229, 240);
+    padding: 40px;
+    text-align: justify;
+    padding-top: 120px;
 }
 h2{
-    font-size: 90px;
+    font-size: 70px;
     line-height: 100px;
     color: #0011DB;
     text-transform: uppercase;
-    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 20px;
+}
+.tit{
+    font-size: 40px;
+    line-height: 100px;
+    color: #0011DB;
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 .b2{
@@ -160,11 +167,11 @@ h2{
 .avant-1 p{
     text-align: justify;
     padding: 20px 60px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .avant-1 h3{
     padding: 10px;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 30px;
     color: #0011DB;
 }
@@ -176,7 +183,7 @@ h2{
 }
 .general-1{
     width: 50%;
-    padding: 100px 250px 100px 100px;
+    padding: 50px 100px;
     background-color: antiquewhite;
 }
 .general-2{
@@ -194,16 +201,15 @@ h2{
     width: 50%;
 }
 .ty{
-    font-size: 55px;
+    font-size: 35px;
     line-height: 70px;
     color: saddlebrown;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 .o{
-    font-size: 20px;
+    font-size: 15px;
+    height:170px;
     color: rgb(15, 15, 15);
-    margin: 25px 0 45px 0;
     text-align: justify;
 } 
 
@@ -336,130 +342,122 @@ textarea{
     padding: 10px;
     background-color: #f3eaea;
 }
-
-@media(max-width:991px){
-    .menu{
-        padding: 20px;
+/* General adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
     }
+    .txt-p, .services-txt p {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Menú */
     .menu label {
-        display: initial;
+        display: block;
     }
-    .respon{
+    .menu .navbar {
         display: none;
-    }
-    .menu .navbar{
         position: absolute;
-        top: 100%;
+        top: 70px;
         left: 0;
-        right: 0;
-        background-color: #fffdfd;
-        display: none;
-    }
-    .menu .navbar ul li{
         width: 100%;
+        background-color: white;
+        z-index: 1000;
     }
-    #menu:checked ~.navbar{
-        display: initial;
+    #menu:checked ~ .navbar {
+        display: block;
     }
-
-    .header-content{
-        padding: 30px;
-    }
-    .header-info h1{
-        font-size: 50px;
-        margin-bottom: 5px;
-    }
-    /*  */
-    .welcome{
-        flex-direction: column;
-    }
-    .welcome-1{
-        display: none;
-    }
-    .welcome-2{
+    .menu .navbar ul li {
         width: 100%;
-        padding: 30px;
         text-align: center;
     }
 
-    h2{
-        font-size: 70px;
-        line-height: 80px;
+    /* Header */
+    .header-info h1 {
+        font-size: 40px;
     }
-    .b2{
-        margin: 15px 0;
+    .header-info p {
+        font-size: 16px;
     }
-/*  */
-    .avant{
-        padding: 38px;
-    }
-    .avant-content h2{
-        padding: 0;
-    }
-    .txt-p{
-        padding: 0;
-    }
-    .avant-group{
+
+    /* Section general */
+    .welcome, .general, .services-group, .avant-group {
         flex-direction: column;
-        margin-bottom: 0;
     }
-    .avant-img{
+    .welcome-1, .general-2, .general-3 {
         display: none;
     }
-
-    /* service */
-    .services{
-        padding: 30px;
-    }
-    .services-txt p{
-        padding: 25px;
-        align-items: justify;
-    }
-
-    .services-group{
-        flex-direction: column;
-        margin: 0;
-    }
-    .services-1{
-        margin: 0 0 20px 0;
-    }
-    /* general */
-    .general{
-        flex-direction: column;
-    }
-    .general-1{
+    .welcome-2, .general-1 {
         width: 100%;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
     }
-    .general-2, .general-3{
-        display: none;
+    .avant-1 img {
+        width: 100%;
+        height: auto;
+    }
+    .services-txt p {
+        padding: 10px;
+    }
+}
 
+@media (max-width: 768px) {
+    h2, .tit {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .header-info h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .btn-1 {
+        font-size: 16px;
+        padding: 8px 20px;
     }
 
-    .testi{
-        padding: 30px;
-    }
-    .testi-group{
+    /* Testimonios */
+    .testi-group, .services-group {
         flex-direction: column;
-        margin-bottom: 0;
     }
-    .testi-1{
-        margin-bottom: 25px;
-    }
-
-
-
-
-
-    .footer-bg{
-        padding: 30px;
-    }
-    textarea{
-        width: 250px !important;
-    }
-    .footer-txt{
-        padding: 40px;
+    .testi-1 img {
+        width: 100%;
+        margin-bottom: 15px;
     }
 
+    /* Formulario */
+    textarea, .campo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales */
+    .menu label {
+        display: block;
+    }
+    .menu .navbar ul li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .header-info h1 {
+        font-size: 24px;
+    }
+    .header-info p {
+        font-size: 12px;
+    }
+    .btn-1 {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+    .general-1 {
+        padding: 10px;
+    }
+    h2, .tit, .ty {
+        font-size: 28px;
+    }
+    .o, .services-txt p, .txt-p {
+        font-size: 14px;
+    }
 }

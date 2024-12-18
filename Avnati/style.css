@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+--primary-color: #05102c;
+--secondary-color: #fcdc75;
+--tertiary-color: 	#374151;
+--primary-text: #FFFFFF;
+--secondary-text: #cadcec;
+--font-stack:'IBM Plex Sans',sans-serif;
+--paragraf-size:1.5em;
+--quarter-color:#60A5FA;
+--sexte: rgb(170, 209, 221);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  var(--primary-color);
+}
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(rgba(4, 15, 48, 0.253),rgba(13, 9, 65, 0.521)),url(./img/como-promocionar-una-consultora.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100000;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+.logo{
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: var(--primary-text);
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: var(--secondary-color);
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    max-width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.header-info h1{
+    color: var(--primary-text);
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.header-info p{
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 20px;
+    color: rgb(13, 24, 175);
+    text-transform: uppercase;
+
+}
+.btn-1:hover{
+    background-color: #d8d515;
+    color: #0f0f0f;
+}
+
+
+.welcome{
+    display: flex;
+}
+.welcome-1{
+    background-image: url(img/avanti.jpeg);
+    background-position: center center;;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 750px;
+}
+
+.welcome-2 {
+    width: 50%;
+    padding: 40px;
+    text-align: justify;
+    padding-top: 120px;
+}
+h2{
+    font-size: 70px;
+    line-height: 100px;
+    color: var(--primary-text);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.tit{
+    font-size: 40px;
+    line-height: 100px;
+    color: var(--primary-text);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.b2{
+    font-size: 20px;
+    color:var(--secondary-text);
+    margin: 25px 0;
+}
+.b1{
+    color: var(--secondary-color);
+}
+
+/* ------------------------------- */
+.avant{
+    padding: 100px 0;
+    background-color: var(--primary-color);
+    position: relative;
+}
+.avant-content{
+    text-align: center;
+}
+.txt-p{
+    font-size: 16px;
+    color: var(--primary-text);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.avant-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.avant-1 img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.avant-1 p{
+    text-align: justify;
+    padding: 20px 60px;
+    font-size: 18px;
+}
+.avant-1 h3{
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 30px;
+    color: var(--secondary-color);
+}
+.bk{
+   color: var(--primary-text);
+}
+/* Section3 */
+
+.general{
+    display: flex;
+}
+.general-1{
+    width: 50%;
+    padding: 50px 100px;
+    background-color: var(--sexte);
+}
+.general-2{
+    background-image: url(img/Pablo.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-3{
+    background-image: url(img/novedad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.ty{
+    font-size: 35px;
+    line-height: 70px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.o{
+    font-size: 16px;
+    height:170px;
+    color: var(--primary-color);
+    text-align: justify;
+} 
+
+/* main */
+
+.services{
+    padding: 100px 0;
+    text-align: center;
+}
+.services-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+hr{
+    border: 3px solid #cf2d3a;
+    width: 80px;
+}
+.services-txt p{
+    padding: 50px 150px;
+    color: var(--primary-text);
+}
+.services-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 0;
+}
+
+.services-1{
+    background-color:  var(--sexte);
+    padding: 35px 25px;
+    margin: 0 10px;
+    border-radius: 15px;
+
+}
+.services-1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0.3 10rem rgb(0, 0, 0, .7);
+}
+.services-1 h3{
+    font-size: 25px;
+    color: #0011DB;
+    padding: 20px;
+}
+
+.services-1 a{
+    color: #cf2d3a;
+    font-size: 16px;
+}
+.services-1 p{
+    color: #080707;
+}
+.services-1 i{
+    color: var(--primary-color);
+    font-size: 70px;
+}
+
+/* testimonios */
+
+.testi{
+    padding: 100px 0;
+    text-align: center;
+}
+.testi-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.testi-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.testi-1{
+    text-align: center;
+}
+.testi-1 img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.testi-1 h3{
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+.testi-1 p{
+    padding: 0 50px;
+    color: var(--quarter-color);
+}
+.testi-1 a{
+    color: #cf2d3a;
+}
+
+.footer-bg{
+    background-image: url(img/Consultora.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: var(--primary-color);
+
+}
+.footer-bg h2{
+    color: var(--quarter-color);
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo-1{
+    margin-bottom: 15px;
+}
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    border-radius: 10px;
+    color: var(--primary-text);
+    font-size: 14px;
+}
+textarea{
+    width: 520px !important;
+}
+
+.footer-txt{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+}
+/* General adjustments for smaller screens */
+/* General adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+    .txt-p, .services-txt p {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Menú */
+    .menu label {
+        display: block;
+    }
+    .menu .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 1000;
+    }
+    #menu:checked ~ .navbar {
+        display: block;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Header */
+    .header-info h1 {
+        font-size: 40px
+    }
+    .header-info p {
+        font-size: 16px;
+    }
+    /* Section general */
+    .welcome, .general, .services-group, .avant-group, .testi-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .welcome-1, .general-2, .general-3 {
+        display: none;
+    }
+    .welcome-2, .general-1 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .avant-1 img {
+        width: 100%;
+        height: auto;
+    }
+    .services-txt p {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2, .tit {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .header-info h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .btn-1 {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    /* General para la sección de servicios */
+    .services-group {
+        display: flex;
+        flex-direction: column; /* Apila los elementos */
+        gap: 20px; /* Espaciado general entre las tarjetas */
+        margin: 0 10px; /* Márgenes laterales */
+        padding-top: 30px;
+    }
+
+    /* Ajuste individual para cada tarjeta */
+    .services-1 {
+        padding: 20px 15px; /* Aumenta el padding interno */
+        margin-bottom: 15px; /* Espaciado adicional entre tarjetas */
+        border-radius: 10px; /* Mantén los bordes redondeados */
+        text-align: center; /* Centra el contenido */
+        background-color: var(--sexte); /* Mantén el fondo original */
+    }
+
+    /* Títulos dentro de las tarjetas */
+    .services-1 h3 {
+        margin-bottom: 10px; /* Espaciado entre el título y el texto */
+        font-size: 18px; /* Ajuste del tamaño del título */
+    }
+
+    /* Texto dentro de las tarjetas */
+    .services-1 p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Mejora la legibilidad */
+        margin: 10px 0; /* Espaciado adicional entre párrafos */
+    }
+
+    /* Iconos */
+    .services-1 i {
+        margin-bottom: 10px; /* Espaciado entre el icono y el título */
+        font-size: 40px; /* Ajuste del tamaño del icono */
+    }
+
+    /* Testimonios */
+    .testi-group, .services-group {
+        flex-direction: column;
+    }
+    .testi-1 img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .testi-1 p{
+        padding-bottom: 45px;
+    }
+
+    /* Formulario */
+    textarea, .campo {
+        width: 100%;
+    }
+    textarea{
+        width: 450px !important;
+    }
+}
+/* Ajustes específicos para max-width: 515px */
+@media (max-width: 515px) {
+
+    /* General */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body, html {
+        overflow-x: hidden; /* Evitar desplazamiento horizontal */
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 10px; /* Ajuste general del padding */
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    /* Sección 'Pablo Fedeli' */
+    .general {
+        flex-direction: column; /* Apila elementos */
+        padding: 10px 0;
+    }
+    .general-1 {
+        width: 100%; /* Ocupa todo el ancho */
+        padding: 10px 15px; /* Espaciado más pequeño */
+        text-align: center;
+    }
+    .ty {
+        font-size: 20px; /* Ajusta el tamaño del título */
+        line-height: 1.3;
+        margin-bottom: 10px;
+        padding-top: 35px;
+    }
+    .o {
+        font-size: 12px; /* Ajuste de tamaño del texto */
+        line-height: 1.5;
+    }
+    .services-1{
+        padding-top: 65px;
+    }
+    /* Sección 'Mercado Competitivo' */
+    .general-3 {
+        display: none; /* Oculta imagen si es necesario */
+    }
+    .general-1 h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .general-1 p {
+        font-size: 12px; /* Texto ajustado */
+        line-height: 1.5;
+    }
+    /* General para la sección de servicios */
+    .services-group {
+        display: flex;
+        flex-direction: column; /* Apila los elementos */
+        gap: 20px; /* Espaciado general entre las tarjetas */
+        margin: 0 10px; /* Márgenes laterales */
+    }
+
+    /* Ajuste individual para cada tarjeta */
+    .services-1 {
+        padding: 20px 15px; /* Aumenta el padding interno */
+        margin-bottom: 15px; /* Espaciado adicional entre tarjetas */
+        border-radius: 10px; /* Mantén los bordes redondeados */
+        text-align: center; /* Centra el contenido */
+        background-color: var(--sexte); /* Mantén el fondo original */
+    }
+
+    /* Títulos dentro de las tarjetas */
+    .services-1 h3 {
+        margin-bottom: 10px; /* Espaciado entre el título y el texto */
+        font-size: 18px; /* Ajuste del tamaño del título */
+    }
+
+    /* Texto dentro de las tarjetas */
+    .services-1 p {
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Mejora la legibilidad */
+        margin: 10px 0; /* Espaciado adicional entre párrafos */
+    }
+
+    /* Iconos */
+    .services-1 i {
+        margin-bottom: 10px; /* Espaciado entre el icono y el título */
+        font-size: 40px; /* Ajuste del tamaño del icono */
+    }
+    /* Footer */
+    .footer-bg {
+        padding: 20px 10px; /* Espaciado ajustado */
+        background-size: cover;
+        text-align: center;
+    }
+    form {
+        flex-direction: column;
+        gap: 10px; /* Espaciado entre inputs */
+    }
+    .campo-1 {
+        flex-direction: column; /* Apila los campos */
+    }
+    .campo, textarea {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 100%; /* Evita desbordes */
+        padding: 10px;
+        font-size: 12px;
+    }
+    textarea {
+        height: 100px; /* Ajusta altura */
+    }
+    .footer-txt p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
